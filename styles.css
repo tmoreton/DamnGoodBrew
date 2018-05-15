@@ -29,3 +29,22 @@ section {
 	font-size: 50px;
 	font-weight: 100;
 }
+
+.email {
+	border: 1px solid #8b5f48;
+	background-color: #efefef;
+	padding: 10px 35px;
+	font-size: 16px;
+}
+
+.button {
+	padding: 10px 25px;
+	border: 1px solid #8b5f48;
+	font-size: 16px;
+	color: #efefef;
+	background-color: #8b5f48;
+}
+
+.mc-field-group {
+	padding: 20px;
+}
