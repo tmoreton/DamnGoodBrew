@@ -6,23 +6,15 @@
 	letter-spacing: 2px;
 }
 
-section {
-	min-height: 100vh;
-}
-
-.flex {
-	display: flex;
-}
-
-.center {
-	justify-content: space-around;
-	align-items: center;
+img {
+	width: 100%;
 }
 
 .hero {
 	background-image: url(./img/beans.jpg);
 	background-size: cover;
 	background-position: center;
+	min-height: 100vh;
 }
 
 .title {
