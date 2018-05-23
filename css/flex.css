@@ -21,10 +21,19 @@
 .top {
   align-items: flex-start;
 }
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
 /* Flexbox Properties End */ 
 
 .hidden-desktop {
-  display: none !important;
+  display: none;
+}
+.hidden-mobile {
+  display: flex;
 }
 
 /* Grid System Desktop */ 
@@ -103,7 +112,10 @@
   .flex-mobile-1 {
     width: 8.3333%;
   }
+  .hidden-desktop {
+    display: flex;
+  }
   .hidden-mobile {
-    display: none !important;
+    display: none;
   }
 }
