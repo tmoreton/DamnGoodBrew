@@ -1,6 +1,5 @@
 *, body {
 	font-family: 'Roboto', sans-serif, Helvetica; 
-	text-align: center;
 	margin: 0;
 	color: #8b5f48;
 	letter-spacing: 2px;
@@ -20,7 +19,27 @@ a:hover {
 }
 
 i {
-	font-size: 20px;
+	padding: 25px;
+}
+
+hr {
+	margin: 50px;
+  border: 1px solid #efefef;
+}
+
+b {
+	font-weight: 500;
+}
+
+section {
+	max-width: 960px;
+	margin: auto;
+	padding: 25px;
+}
+
+.arrow {
+	width: 100px;
+	padding: 20px;
 }
 
 .hero {
@@ -37,7 +56,6 @@ i {
 
 .email {
 	border: 1px solid #8b5f48;
-	background-color: #efefef;
 	padding: 10px 35px;
 	font-size: 16px;
 }

@@ -8,6 +8,7 @@
 .center {
   justify-content: space-around;
   align-items: center;
+  margin: auto;
 }
 .left {
   justify-content: flex-start;
@@ -22,6 +23,16 @@
   align-items: flex-start;
 }
 /* Flexbox Properties End */ 
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
 .hidden-desktop {
   display: none;

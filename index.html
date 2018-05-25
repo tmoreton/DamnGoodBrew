@@ -26,8 +26,8 @@
 
 	<body>
 		
-		<div id="close-nav" class="menu hidden-desktop" onclick="closeNav()"><i class="fas fa-times"></i></div>
-		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><i class="fas fa-bars"></i></div>
+		<div id="close-nav" class="menu hidden-desktop" onclick="closeNav()"><i class="fas fa-times fa-lg"></i></div>
+		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><i class="fas fa-bars fa-lg"></i></div>
 
 		<nav id="nav" class="nav flex center hidden-mobile">
 			<a href="/">
@@ -36,11 +36,11 @@
 			<a href="/">Home</a>
 			<a href="/about">About</a>
 			<a href="/cart">
-				<i class="fas fa-shopping-cart"></i>
+				<i class="fas fa-shopping-cart fa-lg"></i>
 			</a>
 		</nav>
 
-		<section class="flex center hero">
+		<div class="flex center hero text-center">
 			<div>
 				<h1 class="title">DamnGoodBrew</h1>
 				<h2>The Best Damn Coffee In The World</h2>
@@ -67,33 +67,79 @@
 				<!--End mc_embed_signup-->
 
 			</div>
-		</section>
+		</div>
 
-		<!--Pure Flexbox-->
 		<section>
+			<div class="text-center">
+				<h1><b>How To Make Cold Brew</b></h1>
+				<img style="width: 250px;" src="./img/coffee.jpg">
+			</div>
 			<div class="flex center">
-				<div style="width: 500px;">
-					<img src="./img/arrow.jpg">
-				</div>
+				<img style="width: 500px;" src="./img/bag.jpg">
 				<div>
-					<h2>Flexbox</h2>
-					<p>this is a paragraph about the product</p>
+					<h2><b>Step 1</b></h2>
+					<h2>SUBSCRIBE</h2>
+					<p>* Recieve Coffee Bean Bags Monthly or Bi-Weekly *</p>
+					<img class="arrow flex center" src="./img/arrow.jpg">
+				</div>
+			</div>
+			<hr>
+			<div class="flex center text-right">
+				<div>
+					<h2><b>Step 2</b></h2>
+					<h2>ADD WATER</h2>
+					<p>* 2 Cups of Water per Bean Bag *</p>
+
+					<img class="arrow flex center" src="./img/arrow.jpg">
+				</div>
+				<img style="width: 400px;"src="./img/coffee.gif">
+			</div>
+			<hr>
+			<div class="flex center">
+				<img style="width: 350px;" src="./img/enjoy.gif">
+				<div>
+					<h2><b>Step 3</b></h2>
+					<h2>ENJOY!</h2>
+					<p>* Let brew 12-24 hrs before drinking *</p>
+					<img class="arrow flex center" src="./img/arrow.jpg">
 				</div>
 			</div>
 		</section>
 
-		<!--Flex + Grid System-->
-		<section>
-			<div class="flex center">
+		<div class="flex center text-center" style="background-color: #c3b7ac; padding: 100px 0;">
+			<div class="flex-8 flex-mobile-12">
+				<h2><b>"The DamnGoodBrew bean bags makes it so quick & easy to make delicious cold brew for the week. No need to rush around in the morning making coffee or wasting money at Starbucks!"</b></h2>
+				<br>
+				<p>- Candelaria</p>
+			</div>
+		</div>
+
+		<section class="flex center top text-center" style="padding: 100px 0;">
 				<div class="flex-4 flex-mobile-12">
-					<img src="./img/arrow.jpg">
+					<i class="fas fa-dollar-sign fa-4x"></i>
+					<h3><b>Save Money</b></h3>
+					<br>
+					<p>+ DamnGoodBrew ~ $1 per cup</p>
+					<p><b>vs.</b></p>
+					<p>+ Starbucks ~ $3-5 per cup</p>
 				</div>
-				<div>
-					<h2>Flex + Grid</h2>
-					<p>this is a paragraph about the product</p>
+
+				<div class="flex-4 flex-mobile-12">
+					<i class="fas fa-truck fa-4x"></i>
+					<h3><b>Free Monthly Delivery</b></h3>
+					<br>
+					<p>+ Schedule Monthly or Bi-Weekly Deliveries</p>
+					<p>+ Cancel Anytime</p>
 				</div>
-			</div>
+
+				<div class="flex-4 flex-mobile-12">
+					<i class="far fa-clock fa-4x"></i>
+					<h3><b>Quick & Easy</b></h3>
+					<br>
+					<p>+ Only requires 2 Minutes of Prep</p>
+				</div>
 		</section>
+
 	</body>
 
 	<script src="./js/nav.js"></script>
