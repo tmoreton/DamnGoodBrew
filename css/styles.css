@@ -1,9 +1,10 @@
 *, body {
-	font-family: Helvetica; 
+	font-family: 'Roboto', sans-serif, Helvetica; 
 	text-align: center;
 	margin: 0;
 	color: #8b5f48;
 	letter-spacing: 2px;
+	font-weight: 300;
 }
 
 img {
@@ -16,6 +17,10 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+i {
+	font-size: 20px;
 }
 
 .hero {

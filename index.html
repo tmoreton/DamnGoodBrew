@@ -17,14 +17,17 @@
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 		<link rel="stylesheet" type="text/css" href="./css/flex.css">
 		<link rel="stylesheet" type="text/css" href="./css/nav.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
 		
-		<div id="close-nav" class="menu hidden-desktop" onclick="closeNav()">Close</div>
-		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()">Open</div>
+		<div id="close-nav" class="menu hidden-desktop" onclick="closeNav()"><i class="fas fa-times"></i></div>
+		<div id="open-nav" class="menu hidden-desktop" onclick="openNav()"><i class="fas fa-bars"></i></div>
 
 		<nav id="nav" class="nav flex center hidden-mobile">
 			<a href="/">
@@ -32,7 +35,9 @@
 			</a>
 			<a href="/">Home</a>
 			<a href="/about">About</a>
-			<a href="/cart">Cart</a>
+			<a href="/cart">
+				<i class="fas fa-shopping-cart"></i>
+			</a>
 		</nav>
 
 		<section class="flex center hero">
