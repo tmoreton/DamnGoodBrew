@@ -42,6 +42,11 @@ section {
 	padding: 20px;
 }
 
+.quote {
+	background-color: #c3b7ac; 
+	padding: 100px 0;
+}
+
 .hero {
 	background-image: url(../img/beans.jpg);
 	background-size: cover;
