@@ -40,6 +40,9 @@
 .hidden-mobile {
   display: flex;
 }
+.hidden {
+  display: none !important;
+}
 /* Grid System Desktop */ 
 .flex-12 {
   width: 100%;
