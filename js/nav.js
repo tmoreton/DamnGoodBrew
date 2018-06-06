@@ -34,9 +34,9 @@ $('#close-modal').click(function(){
 // End Modal Function
 
 
-$( document ).ready(function() {
-	console.log("ready!")
-	setTimeout(function(){
-		$('#modal').removeClass("hidden");
-	}, 3000);
-});
+// $( document ).ready(function() {
+// 	console.log("ready!")
+// 	setTimeout(function(){
+// 		$('#modal').removeClass("hidden");
+// 	}, 3000);
+// });
