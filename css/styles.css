@@ -52,7 +52,11 @@ section {
 }
 
 .hero {
+<<<<<<< HEAD
 	background-image: url(../img/coffee.gif);
+=======
+	background-image: url(../img/beans.jpg);
+>>>>>>> 803709b599c406dc0a457ee201e27a9f6c44707f
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
@@ -97,9 +101,13 @@ section {
   background-color: #fefefe;
   padding: 50px;
 }
+<<<<<<< HEAD
 /* Modal End */
 
 .instagram-post {
 	max-width: 250px;
 	padding: 25px;
 }
+=======
+/* Modal End */
+>>>>>>> 803709b599c406dc0a457ee201e27a9f6c44707f
