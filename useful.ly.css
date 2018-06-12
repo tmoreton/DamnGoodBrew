@@ -71,7 +71,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-fieldset,
 input,
 select,
 textarea {
@@ -80,6 +79,12 @@ textarea {
 
 img {
   max-width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 0.1rem solid #f4f5f6;
+  margin: 3.0rem 0;
 }
 
 .button,
@@ -115,7 +120,7 @@ select {
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 0.1rem solid #d1d1d1;
+  border: 0.1rem solid #8b5f48;
   border-radius: .4rem;
   box-shadow: none;
   box-sizing: inherit;
@@ -124,8 +129,7 @@ select {
   width: 100%;
   max-width: 300px;
   text-align: center;
-  padding: 10px 35px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 input[type='email'],
@@ -138,25 +142,18 @@ input[type='url'],
 textarea,
 select:focus {
   outline: 0;
-  border: 0.1rem solid #8b5f48;
-}
-
-label,
-legend {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: .5rem;
-}
-
-fieldset {
-  border-width: 0;
-  padding: 0;
 }
 
 input[type='checkbox'],
 input[type='radio'] {
   display: inline;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 a {
@@ -166,23 +163,17 @@ a {
 
 a:focus, 
 a:hover {
-  color: #606c76;
+  color: #6f4c3a;
 }
 
 i {
-	padding: 25px;
-}
-
-hr {
-  border: 0;
-  border-top: 0.2rem solid #f4f5f6;
-  margin: 5rem;
+  padding: 25px;
 }
 
 section {
-	max-width: 960px;
-	margin: auto;
-	padding: 25px;
+  max-width: 960px;
+  margin: auto;
+  padding: 25px;
 }
 
 /* Flexbox Properties Start */ 
@@ -218,7 +209,6 @@ section {
 .text-right {
   text-align: right;
 }
-
 .hidden-desktop {
   display: none;
 }
@@ -228,6 +218,7 @@ section {
 .hidden {
   display: none !important;
 }
+
 /* Grid System Desktop */ 
 .flex-12 {
   width: 100%;
@@ -277,9 +268,8 @@ section {
   background-color: #000; /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 .modal-content {
-  background-color: #fefefe;
+  background-color: #fff;
   padding: 50px;
 }
 /* Modal End */
@@ -297,16 +287,14 @@ section {
   width: 50px;
 }
 
-.main {
-	background-color: #fff;
-	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	padding: 25px;
+.box {
+  background-color: #fff;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  padding: 25px;
 }
 
 .blog-post {
-	padding-top: 75px;
+  padding-top: 75px;
 }
 
 .instagram-post {
@@ -314,20 +302,15 @@ section {
 }
 
 .arrow {
-	width: 100px;
-	padding: 20px;
+  width: 100px;
+  padding: 20px;
 }
 
 .hero {
-	background-image: url(./img/beans.jpg);
-	background-size: cover;
-	background-position: center;
-	min-height: 100vh;
-}
-
-.title {
-	font-size: 50px;
-	font-weight: 100;
+  background-image: url(./img/beans.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width : 480px) {
