@@ -82,12 +82,6 @@ img {
   max-width: 100%;
 }
 
-hr {
-  border: 0;
-  border-top: 0.1rem solid #f4f5f6;
-  margin: 3.0rem 0;
-}
-
 .button,
 button,
 input[type='submit'] {
@@ -130,6 +124,8 @@ select {
   width: 100%;
   max-width: 300px;
   text-align: center;
+  padding: 10px 35px;
+  font-size: 1.5rem;
 }
 
 input[type='email'],
@@ -168,7 +164,8 @@ a {
   text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus, 
+a:hover {
   color: #606c76;
 }
 
@@ -177,12 +174,9 @@ i {
 }
 
 hr {
-	margin: 50px;
-  border: 1px solid #efefef;
-}
-
-b {
-	font-weight: 500;
+  border: 0;
+  border-top: 0.2rem solid #f4f5f6;
+  margin: 5rem;
 }
 
 section {
@@ -191,48 +185,85 @@ section {
 	padding: 25px;
 }
 
-.main {
-	background-color: #fff;
-	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-	padding: 25px;
+/* Flexbox Properties Start */ 
+.flex  {
+  display: flex;        
+  flex-wrap: wrap;
+}
+.center {
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.left {
+  justify-content: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.bottom {
+  align-items: flex-end;
+}
+.top {
+  align-items: flex-start;
+}
+/* Flexbox Properties End */ 
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 
-.blog-post {
-	padding-top: 75px;
+.hidden-desktop {
+  display: none;
 }
-
-.arrow {
-	width: 100px;
-	padding: 20px;
+.hidden-mobile {
+  display: flex;
 }
-
-.quote {
-	background-color: #c3b7ac; 
-	padding: 100px 0;
+.hidden {
+  display: none !important;
 }
-
-.hero {
-	background-image: url(../img/beans.jpg);
-	background-size: cover;
-	background-position: center;
-	min-height: 100vh;
+/* Grid System Desktop */ 
+.flex-12 {
+  width: 100%;
 }
-
-.title {
-	font-size: 50px;
-	font-weight: 100;
+.flex-11 {
+  width: 91.6666%;
 }
-
-.email {
-	border: 1px solid #8b5f48;
-	padding: 10px 35px;
-	font-size: 16px;
+.flex-10 {
+  width: 83.3333%;
 }
-
-.mc-field-group {
-	padding: 20px;
+.flex-9 {
+  width: 74.9999%;
+}
+.flex-8 {
+  width: 66.6666%;
+}
+.flex-7 {
+  width: 58.3333%;
+}
+.flex-6 {
+  width: 50%;
+}
+.flex-5 {
+  width: 41.6666%;
+}
+.flex-4 {
+  width: 33.3333%;
+}
+.flex-3 {
+  width: 25%;
+}
+.flex-2 {
+  width: 16.6666%;
+}
+.flex-1 {
+  width: 8.3333%;
 }
 
 /* Modal Start */
@@ -253,10 +284,118 @@ section {
 }
 /* Modal End */
 
-.instagram-post {
+.nav {
+  height: 65px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+}
+
+.logo {
+  width: 50px;
+}
+
+.main {
+	background-color: #fff;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 	padding: 25px;
 }
 
-.html5-video-player {
-	display:none !important;
+.blog-post {
+	padding-top: 75px;
+}
+
+.instagram-post {
+  padding: 25px;
+}
+
+.arrow {
+	width: 100px;
+	padding: 20px;
+}
+
+.hero {
+	background-image: url(./img/beans.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.title {
+	font-size: 50px;
+	font-weight: 100;
+}
+
+@media only screen and (max-width : 480px) {
+  .flex-mobile-12 {
+    width: 100%;
+  }
+  .flex-mobile-11 {
+    width: 91.6666%;
+  }
+  .flex-mobile-10 {
+    width: 83.3333%;
+  }
+  .flex-mobile-9 {
+    width: 74.9999%;
+  }
+  .flex-mobile-8 {
+    width: 66.6666%;
+  }
+  .flex-mobile-7 {
+    width: 58.3333%;
+  }
+  .flex-mobile-6 {
+    width: 50%;
+  }
+  .flex-mobile-5 {
+    width: 41.6666%;
+  }
+  .flex-mobile-4 {
+    width: 33.3333%;
+  }
+  .flex-mobile-3 {
+    width: 25%;
+  }
+  .flex-mobile-2 {
+    width: 16.6666%;
+  }
+  .flex-mobile-1 {
+    width: 8.3333%;
+  }
+  .hidden-desktop {
+    display: flex;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
+  .nav {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2; 
+    background-color: #fff;
+  }
+  
+  .logo {
+    width: 150px;
+  }
 }
