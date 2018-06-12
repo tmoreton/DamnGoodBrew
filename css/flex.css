@@ -22,6 +22,7 @@
 .top {
   align-items: flex-start;
 }
+
 /* Flexbox Properties End */ 
 
 .text-center {
@@ -124,5 +125,8 @@
   }
   .hidden-mobile {
     display: none;
+  }
+  .reverse {
+    flex-direction: column-reverse;
   }
 }

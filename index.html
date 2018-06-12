@@ -16,11 +16,10 @@
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 		<link rel="stylesheet" type="text/css" href="./css/flex.css">
 		<link rel="stylesheet" type="text/css" href="./css/nav.css">
-		
+		<link rel="stylesheet" type="text/css" href="./css/milligram.css">
+
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-
 
 		<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
@@ -29,20 +28,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="cold brew, coffee, iced coffee">
 		<meta name="description" content="This is an example of a meta description.">
+		<link rel="shortcut icon" href="./img/favicon.png" />
 		<meta name="google-site-verification" content="-f8eXRr4Ea2OUamCsB8qsf9kHqmr0ABTyuolC-84EpI" />
 	</head>
 
 	<body>
 		
 		<!-- Begin Navigation Bar -->
-		<div id="close-nav" class="menu hidden-desktop">
+		<div id="close-nav" class="menu hidden-desktop hidden">
 			<i class="fas fa-times fa-lg"></i>
 		</div>
-		<div id="open-nav" class="menu hidden-desktop">
+		<div id="open-nav" class="menu hidden-desktop hidden">
 			<i class="fas fa-bars fa-lg"></i>
 		</div>
 
-		<nav id="nav" class="nav flex center hidden-mobile">
+		<nav id="nav" class="nav flex center hidden-mobile hidden">
 			<a href="index.html">
 				<img class="logo" src="./img/logo.jpg">
 			</a>
@@ -63,26 +63,26 @@
 
 		<!-- Begin Homepage Here -->
 		<div class="flex center hero text-center">
-			<div>
-				<h1 class="title">DamnGoodBrew</h1>
-				<h2>The Best Damn Coffee In The World</h2>
+			<div class="main">
+				<img style="width: 250px;"src="./img/logo.png">
+				<h4>The Best Damn Coffee In The World</h4>
 				<p>Colombia - Ethiopia - Indonesia</p>
 
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
 					<form action="https://useful.us3.list-manage.com/subscribe/post?u=039197b0b22c39f4adf21fc88&amp;id=5b25f9b28f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
-							<div class="mc-field-group">
-								<p>Be The First To Hear About Our New Product Release!</p>
-								<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-							</div>
+							<small>Be The First To Pre-Order</small>
+							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 							<div id="mce-responses" class="clear">
 								<div class="response" id="mce-error-response" style="display:none"></div>
 								<div class="response" id="mce-success-response" style="display:none"></div>
 							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							
 							<div style="position: absolute; left: -5000px;" aria-hidden="true">
 								<input type="text" name="b_039197b0b22c39f4adf21fc88_5b25f9b28f" tabindex="-1" value="">
 							</div>
+							
 							<div class="clear">
 								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 							</div>
@@ -97,14 +97,15 @@
 		<section>
 
 			<div class="text-center">
-				<h1><b>How To Make Cold Brew</b></h1>
+				<br/>
+				<h1>How To Make Cold Brew</h1>
 				<img style="width: 250px;" src="./img/coffee.jpg">
 			</div>
 
 			<hr>
 
 			<!--Step #1-->
-			<div class="flex center">
+			<div class="flex center text-center">
 				<img style="width: 500px;" src="./img/step-1.jpg">
 				<div>
 					<h2><b>Step 1</b></h2>
@@ -117,8 +118,8 @@
 			<hr>
 
 			<!--Step #2-->
-			<div class="flex center text-right">
-				<div>
+			<div class="flex center reverse text-center">
+				<div style="padding-top: 25px;">
 					<h2><b>Step 2</b></h2>
 					<h2>ADD WATER</h2>
 					<p>* 2 Cups of Water per Bean Bag *</p>
@@ -130,7 +131,7 @@
 			<hr>
 
 			<!--Step #3-->
-			<div class="flex center">
+			<div class="flex center text-center">
 				<img style="width: 350px;" src="./img/step-3.gif">
 				<div>
 					<h2><b>Step 3</b></h2>
@@ -143,47 +144,43 @@
 		</section>
 
 		<!--Quote Section-->
-		<div class="quote flex center text-center">
+<!-- 		<div class="quote flex center text-center">
 			<div class="flex-8 flex-mobile-12">
 				<h2><b>"The DamnGoodBrew bean bags makes it so quick & easy to make delicious cold brew for the week, no need to rush around in the morning!"</b></h2>
 				<br>
 				<p>- Candelaria</p>
 			</div>
-		</div>
+		</div> -->
 
 		<!--Bullet Points Section-->
-		<section class="flex center top text-center" style="padding: 100px 0;">
-			<div class="flex-4 flex-mobile-12">
-				<i class="fas fa-dollar-sign fa-4x"></i>
-				<h3><b>Save Money</b></h3>
-				<br>
-				<p>+ DamnGoodBrew ~ $1 per cup</p>
-				<p><b>vs.</b></p>
-				<p>+ Coffee Shop ~ $3-5 per cup</p>
-			</div>
+		<div style="color: #fff; background-color: #8b5f48; padding: 50px 0;">
+			<section class="flex center top text-center" >
+				<div class="flex-4 flex-mobile-12">
+					<i class="fas fa-dollar-sign fa-3x"></i>
+					<h4><b>Save Money</b></h4>
+					<p>DamnGoodBrew ~ $1 per cup <br/><b>vs.</b><br/>Coffee Shop ~ $3-5 per cup</p>
+				</div>
 
-			<div class="flex-4 flex-mobile-12">
-				<i class="fas fa-truck fa-4x"></i>
-				<h3><b>Free Monthly Delivery</b></h3>
-				<br>
-				<p>+ Schedule Monthly or Bi-Weekly</p>
-				<p>+ Cancel Anytime</p>
-			</div>
+				<div class="flex-4 flex-mobile-12">
+					<i class="fas fa-truck fa-3x"></i>
+					<h4><b>Free Monthly Delivery</b></h4>
+					<p>Schedule Monthly or Bi-Weekly <br/> Cancel Anytime</p>
+				</div>
 
-			<div class="flex-4 flex-mobile-12">
-				<i class="far fa-clock fa-4x"></i>
-				<h3><b>Quick & Easy</b></h3>
-				<br>
-				<p>+ Requires less than < 1 Minute of Prep</p>
-			</div>
-			<br/>
-			<button  class="button open-modal">Open Modal</button>
-		</section>
+				<div class="flex-4 flex-mobile-12">
+					<i class="far fa-clock fa-3x"></i>
+					<h4><b>Quick & Easy</b></h4>
+					<p>Takes less than < 1 Minute</p>
+				</div>
+			</section>
+		</div>
 		<!-- End Homepage Here -->
 
 
 
 		<!-- The Modal -->
+<!-- 		<button  class="button open-modal">Open Modal</button>
+
 		<div id="modal" class="modal flex center hidden">
 		  <div class="modal-content text-center">
 		  	<h3>Put modal stuff here</h3>
@@ -191,20 +188,20 @@
 				<small id="close-modal">Close</small>
 		  </div>
 		</div>
-
+ -->
 
 		<!-- Begin Instagram Here -->
 		<section style="padding: 100px 0;" class="text-center">
 			<h1>#damngoodbrew</h1>
 			<div class="flex center">
 				<a href="https://www.instagram.com/damngoodbrew/" target="_blank">
-					<img class="instagram-post" src="./img/instagram.jpg">
+					<img class="instagram-post" src="./img/instagram-1.jpg">
 				</a>
 				<a href="https://www.instagram.com/damngoodbrew/" target="_blank">
-					<img class="instagram-post" src="./img/instagram.jpg">
+					<img class="instagram-post" src="./img/instagram-3.jpg">
 				</a>
 				<a href="https://www.instagram.com/damngoodbrew/" target="_blank">
-					<img class="instagram-post" src="./img/instagram.jpg">
+					<img class="instagram-post" src="./img/instagram-2.jpg">
 				</a>
 			</div>
 		</section>
@@ -212,13 +209,12 @@
 
 		<!-- Begin Youtube/Video Here -->
 		<section>
-			<h1>HTML 5 Video Tag Embed</h1>
-			<video width="100%" height="500" autoplay controls >
-			  <source src="./img/how-to-make-cold-brew.mp4" type="video/mp4">
+			<video width="100%" height="500" controls >
+			  <source src="./img/coffee-small.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
-			<h1>iFrame from Youtube</h1>
-			<iframe width="960" height="500" src="https://www.youtube.com/embed/92aWJSRZ6no" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- 			<h1>iFrame from Youtube</h1>
+			<iframe width="960" height="500" src="https://www.youtube.com/embed/92aWJSRZ6no" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 		</section>
 
 
@@ -267,7 +263,7 @@
     </script>
 
     
-<button
+<!-- <button
     class="snipcart-add-item"
     data-item-id="2"
     data-item-name="Bacon"
@@ -277,16 +273,36 @@
     data-item-description="Some fresh bacon">
         Buy bacon
 </button>
-
+ -->
 		<!-- Begin Footer Here -->
 		<hr>
+				<div id="mc_embed_signup" class="flex center text-center">
+					<form action="https://useful.us3.list-manage.com/subscribe/post?u=039197b0b22c39f4adf21fc88&amp;id=5b25f9b28f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<small>Be The First To Pre-Order</small>
+							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_039197b0b22c39f4adf21fc88_5b25f9b28f" tabindex="-1" value="">
+							</div>
+							
+							<div class="clear">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+							</div>
+						</div>
+					</form>
+				</div>
 
 		<footer class="text-center">
-			<div style="max-width: 500px;" class="flex center">
+<!-- 			<div style="max-width: 500px;" class="flex center">
 				<a href="/">Home</a>
 				<a href="/blog">Blog</a>
 				<a href="/about">About</a>
-			</div>
+			</div> -->
 
 			<div style="max-width: 250px;" class="flex center">
 				<a href="https://www.instagram.com/damngoodbrew/">
@@ -306,7 +322,7 @@
 	</body>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="N2JjYmRiOGYtZDVmOS00MzUwLTlhNGEtM2QwZTgwNTVjYjM2NjM2NjM5MzI3Nzk4NjI0NTAx"></script>
+	<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="N2JjYmRiOGYtZDVmOS00MzUwLTlhNGEtM2QwZTgwNTVjYjM2NjM2NjM5MzI3Nzk4NjI0NTAx"></script>
 	<script src="./js/nav.js"></script>
 
 </html>
