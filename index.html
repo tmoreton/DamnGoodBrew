@@ -30,7 +30,7 @@
 	<body>
 		
 		<!-- Begin Navigation Bar -->
-<!-- 		<div id="close-nav" class="menu hidden-desktop hidden">
+		<div id="close-nav" class="menu hidden-desktop hidden">
 			<i class="fas fa-times fa-lg"></i>
 		</div>
 		<div id="open-nav" class="menu hidden-desktop hidden">
@@ -46,7 +46,7 @@
 			<a href="/">
 				<i class="fas fa-shopping-cart fa-lg"></i>
 			</a>
-		</nav> -->
+		</nav>
 		<!-- End Navigation Bar -->
 
 
@@ -100,39 +100,105 @@
 
 			<!--Step #1-->
 			<div class="flex center text-center">
-				<img style="width: 500px;" src="./img/step-1.jpg">
 				<div>
 					<h2><b>Step 1</b></h2>
 					<h2>SUBSCRIBE</h2>
 					<p>* Recieve Coffee Bean Bags Monthly or Bi-Weekly *</p>
 					<img class="arrow flex center" src="./img/arrow.jpg">
 				</div>
+				<img style="width: 500px;" src="./img/step-1.jpg">
 			</div>
 
 			<hr/>
 
 			<!--Step #2-->
 			<div class="flex center reverse text-center">
+				<img style="width: 400px;"src="./img/step-2.gif">
 				<div style="padding-top: 25px;">
 					<h2><b>Step 2</b></h2>
 					<h2>ADD WATER</h2>
 					<p>* 2 Cups of Water per Bean Bag * <br/> * Let brew 12-24 hrs before drinking *</p>
 					<img class="arrow flex center" src="./img/arrow.jpg">
 				</div>
-				<img style="width: 400px;"src="./img/step-2.gif">
 			</div>
 
 			<hr/>
 
 			<!--Step #3-->
 			<div class="flex center text-center">
-				<img style="width: 350px;" src="./img/step-3.gif">
 				<div>
 					<h2><b>Step 3</b></h2>
 					<h2>ENJOY!</h2>
+					<img class="arrow flex center" src="./img/arrow.jpg">
+				</div>
+				<img style="width: 350px;" src="./img/step-3.gif">
+			</div>
+		</section>
+
+		<hr/>
+		<!--Product Section-->
+		<section>
+			<div class="flex center">
+				<img style="width: 500px;" src="./img/product.jpg">
+
+				<div class="flex-5 flex-mobile-12">
+					<h2 style="margin-bottom: 0;">DAMN GOOD BREW</h2>
+					<h2><b>Brew Bags</b></h2>
+					<h5>Each pack of Brew Bags contain coffee sourced from the best beans in Colombia and Ethiopia. The blend of beans from two very different regions has a smooth chocolatey flavor</h5>
+
+<!-- 					<button
+				    class="snipcart-add-item"
+				    data-item-id="2"
+				    data-item-name="Bacon"
+				    data-item-price="3.00"
+				    data-item-weight="20"
+				    data-item-url="http://damngoodbrew.co"
+				    data-item-description="Some fresh bacon">
+				        Buy bacon
+					</button> -->
+
+						<div class="flex-6 flex-mobile-12" >
+						  <label><small>Quantity</small></label>
+						  <select name="quantity">
+						    <option value="15">15 cups</option>
+						    <option value="30">30 cups</option>
+						  </select>
+						</div>
+					<button class="button open-modal">Pre Order</button>
 				</div>
 			</div>
 		</section>
+		<!-- The Modal -->
+		
+
+		<div id="modal" class="modal flex center hidden">
+		  <div class="flex-6 flex-mobile-12 modal-content text-center">
+		  	<h3>Sorry we are still making some final updates to provide the best possible cup of coffee for you!</h3>
+				<div id="mc_embed_signup" class="flex center text-center">
+					<form action="https://useful.us3.list-manage.com/subscribe/post?u=039197b0b22c39f4adf21fc88&amp;id=5b25f9b28f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<small>Sign up below and recieve 25% off a monthly subscription when the best damn coffee is ready</small>
+							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required" id="mce-EMAIL">
+							
+							<div id="mce-responses">
+								<div id="mce-error-response" style="display:none"></div>
+								<div id="mce-success-response" style="display:none"></div>
+							</div>    
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_039197b0b22c39f4adf21fc88_5b25f9b28f" tabindex="-1" value="">
+							</div>
+							
+							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+						</div>
+						<small id="close-modal">Close</small>
+					</form>
+				</div>
+
+		  </div>
+		</div>
+
 
 		<!--Quote Section-->
 <!-- 		<div class="quote flex center text-center">
@@ -149,7 +215,7 @@
 				<div class="flex-4 flex-mobile-12">
 					<i class="fas fa-dollar-sign fa-3x"></i>
 					<h4><b>Save Money</b></h4>
-					<p>DamnGoodBrew ~ $1 per cup <br/><b>vs.</b><br/>Coffee Shop ~ $3-5 per cup</p>
+					<p>DamnGoodBrew less than < $2 per cup <br/><b>vs.</b><br/>Coffee Shop ~ $3-5 per cup</p>
 				</div>
 
 				<div class="flex-4 flex-mobile-12">
@@ -168,18 +234,6 @@
 		<!-- End Homepage Here -->
 
 
-
-		<!-- The Modal -->
-<!-- 		<button  class="button open-modal">Open Modal</button>
-
-		<div id="modal" class="modal flex center hidden">
-		  <div class="modal-content text-center">
-		  	<h3>Put modal stuff here</h3>
-		  	<br/>
-				<small id="close-modal">Close</small>
-		  </div>
-		</div>
- -->
 
 		<!-- Begin Instagram Here -->
 		<section style="padding: 100px 0;" class="text-center">

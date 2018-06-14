@@ -100,8 +100,8 @@ input[type='submit'] {
   margin-bottom: 1.0rem;
 }
 
-.button,
-button,
+.button:hover,
+button:hover,
 input[type='submit']:hover {
   background-color: #6f4c3a;
   border: 1px solid #6f4c3a;
@@ -110,17 +110,11 @@ input[type='submit']:hover {
 input[type='email'],
 input[type='number'],
 input[type='password'],
-input[type='search'],
-input[type='tel'],
 input[type='text'],
-input[type='url'],
 textarea,
 select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
   border: 0.1rem solid #8b5f48;
+  color: #8b5f48;
   border-radius: .4rem;
   box-shadow: none;
   box-sizing: inherit;
@@ -130,16 +124,14 @@ select {
   max-width: 300px;
   text-align: center;
   font-size: 1.25rem;
+  padding-right: 1rem;
 }
 
-input[type='email'],
-input[type='number'],
-input[type='password'],
-input[type='search'],
-input[type='tel'],
-input[type='text'],
-input[type='url'],
-textarea,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='text']:focus,
+textarea:focus,
 select:focus {
   outline: 0;
 }
@@ -270,7 +262,7 @@ section {
 }
 .modal-content {
   background-color: #fff;
-  padding: 50px;
+  padding: 25px;
 }
 /* Modal End */
 
