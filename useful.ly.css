@@ -391,3 +391,6 @@ section {
   width: 100%;
   height: 100%;
 }
+.shopify-buy__cart-toggle {
+  background-color: #8b5f48 !important;
+}

@@ -155,25 +155,8 @@
 					<h2><b>Brew Bags</b></h2>
 					<h5>Each pack of Brew Bags contain coffee sourced from the best beans in Colombia and Ethiopia. The blend of beans from two very different regions has a smooth chocolatey flavor</h5>
 
-<!-- 					<button
-				    class="snipcart-add-item"
-				    data-item-id="2"
-				    data-item-name="Bacon"
-				    data-item-price="3.00"
-				    data-item-weight="20"
-				    data-item-url="http://damngoodbrew.co"
-				    data-item-description="Some fresh bacon">
-				        Buy bacon
-					</button> -->
-
-<!-- 						<div class="flex-6 flex-mobile-12" >
-						  <label><small>Quantity</small></label>
-						  <select name="quantity">
-						    <option value="15">15 cups</option>
-						    <option value="30">30 cups</option>
-						  </select>
-						</div> -->
-					<button class="button open-modal">Pre Order</button>
+					<div id='product-component-10ca975396a'></div>
+    
 				</div>
 			</div>
 		</section>
@@ -325,5 +308,241 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./useful.ly.js"></script>
+
+	<script type="text/javascript">
+	/*<![CDATA[*/
+
+	(function () {
+	  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+	  if (window.ShopifyBuy) {
+	    if (window.ShopifyBuy.UI) {
+	      ShopifyBuyInit();
+	    } else {
+	      loadScript();
+	    }
+	  } else {
+	    loadScript();
+	  }
+
+	  function loadScript() {
+	    var script = document.createElement('script');
+	    script.async = true;
+	    script.src = scriptURL;
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+	    script.onload = ShopifyBuyInit;
+	  }
+
+	  function ShopifyBuyInit() {
+	    var client = ShopifyBuy.buildClient({
+	      domain: 'damn-good-brew.myshopify.com',
+	      apiKey: 'c0bfae2a0bf21d68c3b7d760eb046209',
+	      appId: '6',
+	    });
+
+	    ShopifyBuy.UI.onReady(client).then(function (ui) {
+	      ui.createComponent('product', {
+	        id: [1453623509090],
+	        node: document.getElementById('product-component-10ca975396a'),
+	        moneyFormat: '%24%7B%7Bamount%7D%7D',
+	        options: {
+	  "product": {
+	    "buttonDestination": "checkout",
+	    "variantId": "all",
+	    "width": "240px",
+	    "contents": {
+	      "img": false,
+	      "imgWithCarousel": false,
+	      "title": false,
+	      "variantTitle": false,
+	      "price": false,
+	      "description": false,
+	      "buttonWithQuantity": false,
+	      "quantity": false
+	    },
+	    "text": {
+	      "button": "PRE ORDER"
+	    },
+	    "styles": {
+	      "product": {
+	        "@media (min-width: 601px)": {
+	          "max-width": "calc(25% - 20px)",
+	          "margin-left": "20px",
+	          "margin-bottom": "50px"
+	        }
+	      },
+	      "button": {
+	        "background-color": "#8b5f48",
+	        "font-family": "Roboto, sans-serif",
+	        ":hover": {
+	          "background-color": "#7d5641"
+	        },
+	        "border-radius": "5px",
+	        ":focus": {
+	          "background-color": "#7d5641"
+	        },
+	        "font-weight": "bold"
+	      },
+	      "variantTitle": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "title": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "description": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "price": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "compareAt": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      }
+	    },
+	    "googleFonts": [
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto"
+	    ]
+	  },
+	  "cart": {
+	    "contents": {
+	      "button": true
+	    },
+	    "styles": {
+	      "button": {
+	        "background-color": "#8b5f48",
+	        "font-family": "Roboto, sans-serif",
+	        ":hover": {
+	          "background-color": "#7d5641"
+	        },
+	        "border-radius": "5px",
+	        ":focus": {
+	          "background-color": "#7d5641"
+	        },
+	        "font-weight": "bold"
+	      },
+	      "footer": {
+	        "background-color": "#ffffff"
+	      }
+	    },
+	    "googleFonts": [
+	      "Roboto"
+	    ]
+	  },
+	  "modalProduct": {
+	    "contents": {
+	      "img": false,
+	      "imgWithCarousel": true,
+	      "variantTitle": false,
+	      "buttonWithQuantity": true,
+	      "button": false,
+	      "quantity": false
+	    },
+	    "styles": {
+	      "product": {
+	        "@media (min-width: 601px)": {
+	          "max-width": "100%",
+	          "margin-left": "0px",
+	          "margin-bottom": "0px"
+	        }
+	      },
+	      "button": {
+	        "background-color": "#8b5f48",
+	        "font-family": "Roboto, sans-serif",
+	        ":hover": {
+	          "background-color": "#7d5641"
+	        },
+	        "border-radius": "5px",
+	        ":focus": {
+	          "background-color": "#7d5641"
+	        },
+	        "font-weight": "bold"
+	      },
+	      "variantTitle": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "title": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "description": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "price": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      },
+	      "compareAt": {
+	        "font-family": "Roboto, sans-serif",
+	        "font-weight": "normal"
+	      }
+	    },
+	    "googleFonts": [
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto",
+	      "Roboto"
+	    ]
+	  },
+	  "toggle": {
+	    "styles": {
+	      "toggle": {
+	        "font-family": "Roboto, sans-serif",
+	        "background-color": "#8b5f48",
+	        ":hover": {
+	          "background-color": "#7d5641"
+	        },
+	        ":focus": {
+	          "background-color": "#7d5641"
+	        },
+	        "font-weight": "bold"
+	      }
+	    },
+	    "googleFonts": [
+	      "Roboto"
+	    ]
+	  },
+	  "option": {
+	    "styles": {
+	      "label": {
+	        "font-family": "Roboto, sans-serif"
+	      },
+	      "select": {
+	        "font-family": "Roboto, sans-serif"
+	      }
+	    },
+	    "googleFonts": [
+	      "Roboto",
+	      "Roboto"
+	    ]
+	  },
+	  "productSet": {
+	    "styles": {
+	      "products": {
+	        "@media (min-width: 601px)": {
+	          "margin-left": "-20px"
+	        }
+	      }
+	    }
+	  }
+	}
+	      });
+	    });
+	  }
+	})();
+	/*]]>*/
+	</script>
 
 </html>
