@@ -272,7 +272,7 @@ section {
   position: fixed;
   width: 100%;
   background-color: #fff;
-  top: 0;
+  top: 21px;
   z-index: 1;
 }
 
@@ -305,6 +305,32 @@ section {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.youtube {
+  position: relative;
+  padding-bottom: 35.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.shopify-buy__cart-toggle {
+  background-color: #8b5f48 !important;
+}
+.free-shipping {
+  background-color: #8b5f48;
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
 }
 
 @media only screen and (max-width : 480px) {
@@ -376,22 +402,4 @@ section {
   .logo {
     width: 150px;
   }
-}
-
-
-.youtube {
-  position: relative;
-  padding-bottom: 35.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.youtube iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.shopify-buy__cart-toggle {
-  background-color: #8b5f48 !important;
 }
