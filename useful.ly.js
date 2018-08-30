@@ -25,7 +25,7 @@ $('#close-modal').click(function(){
 $( document ).ready(function() {
     setTimeout(function(){ 
 			$('#modal').removeClass("hidden");
-    }, 5000);
+    }, 3000);
 });
 
 // Set the date we're counting down to
