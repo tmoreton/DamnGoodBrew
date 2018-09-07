@@ -22,11 +22,11 @@ $('#close-modal').click(function(){
 });
 // End Modal Function
 
-$( document ).ready(function() {
-    setTimeout(function(){ 
-			$('#modal').removeClass("hidden");
-    }, 3000);
-});
+// $( document ).ready(function() {
+//     setTimeout(function(){ 
+// 			$('#modal').removeClass("hidden");
+//     }, 3000);
+// });
 
 // Set the date we're counting down to
 var countDownDate = new Date("Sept 6, 2018 23:59:59").getTime();
