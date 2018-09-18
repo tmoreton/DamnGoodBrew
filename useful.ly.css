@@ -259,7 +259,7 @@ section {
   height: 100%; /* Full height */
   background-color: #000; /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  background-image: url("./img/spilled-beans.jpg");
+  background-image: url("./img/coffee-written-with-beans.jpg");
   background-position: center;
   background-size: cover;
 

@@ -172,15 +172,239 @@
 							<b>Price</b>
 							<p>$18.00</p>
 						</div>
-<!-- 						<div>
-							<b>Original Price</b>
-							<p style="text-decoration: line-through;">$21.00</p>
-						</div> -->
 					</div>
 					
-					<div style="margin-left: -40px;" id='product-component-fd20816d32b'></div>
-					<p><small>*First Pre-Orders will start shipping Mid September*</small></p>
-    
+<div id='product-component-8765565a1b3'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'damn-good-brew.myshopify.com',
+      storefrontAccessToken: 'c0bfae2a0bf21d68c3b7d760eb046209',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1453623509090],
+        node: document.getElementById('product-component-8765565a1b3'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#8b5f48",
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#7d5641"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#7d5641"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#8b5f48",
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#7d5641"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#7d5641"
+        },
+        "font-weight": "bold"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#8b5f48",
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#7d5641"
+        },
+        "border-radius": "5px",
+        ":focus": {
+          "background-color": "#7d5641"
+        },
+        "font-weight": "bold"
+      },
+      "variantTitle": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "title": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-weight": "normal"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#8b5f48",
+        ":hover": {
+          "background-color": "#7d5641"
+        },
+        ":focus": {
+          "background-color": "#7d5641"
+        },
+        "font-weight": "bold"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Roboto, sans-serif"
+      },
+      "select": {
+        "font-family": "Roboto, sans-serif"
+      }
+    },
+    "googleFonts": [
+      "Roboto",
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script> 
 				</div>
 			</div>
 		</section>
@@ -188,32 +412,17 @@
 		
 
 		<div id="modal" class="modal flex center hidden">
-		  <div class="flex-4 flex-mobile-12 modal-content text-center">
-		  	<h3><b>Free Coffee Giveaway!</b></h3>
-				<div id="mc_embed_signup" class="flex center text-center">
-					<form action="https://damngoodbrew.us19.list-manage.com/subscribe/post?u=a6fc9e18d1dd396102cb06aac&amp;id=1c501f9f8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-							<p>Enter your email for a chance to be one of the 20 winners to get a <b>FREE</b> Damn Good Brew sample pack!</p>
-							<b>Giveaway Ends In...</b>
-							<p id="timer"></p>
-							<input type="email" placeholder="Email Address" value="" name="EMAIL" class="required" id="mce-EMAIL">
-							
-							<div id="mce-responses">
-								<div id="mce-error-response" style="display:none"></div>
-								<div id="mce-success-response" style="display:none"></div>
-							</div>    
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							
-							<div style="position: absolute; left: -5000px;" aria-hidden="true">
-								<input type="text" name="b_039197b0b22c39f4adf21fc88_5b25f9b28f" tabindex="-1" value="">
-							</div>
-							
-							<input type="submit" value="Enter Contest" name="subscribe" id="mc-embedded-subscribe" class="button">
-						</div>
-						<small id="close-modal">Close</small>
-					</form>
-				</div>
-
+		  <div class="flex-5 flex-mobile-12 modal-content text-center">
+					<h2><b>WE'RE LIVE!</b></h2>
+					<h2>Brew Bags</h2>
+					<img style="width: 250px;" src="./img/product.png">
+					<div>
+						<small><b>What's Inside?</b></small>
+						<small><p>8 Brew Bags ≈ 16 cups of coffee</p></small>
+					</div>
+					<p>$18.00</p>
+					<div style="margin: auto;" id='product-component-fd20816d32b'></div>
+					<small id="close-modal">Close</small>
 		  </div>
 		</div>
 
@@ -233,7 +442,7 @@
 				<div class="flex-4 flex-mobile-12">
 					<i class="fas fa-dollar-sign fa-3x"></i>
 					<h4><b>Save Money</b></h4>
-					<p>$1.31 per cup of Cold Brew Coffee</p>
+					<p>≈ $1.21 per cup of Cold Brew Coffee</p>
 				</div>
 
 				<div class="flex-4 flex-mobile-12">
@@ -374,7 +583,7 @@
       "quantity": false
     },
     "text": {
-      "button": "PRE ORDER"
+      "button": "ADD TO CART"
     },
     "styles": {
       "product": {
